@@ -1,6 +1,6 @@
 # borecky-agency-reporting
 
-GOAL onboarding reports for **The Borecky Agency** (Patrick Borecky — Little Rock, AR).
+GOAL onboarding and SEO reports for **The Borecky Agency** (Patrick Borecky — Little Rock, AR).
 
 Deployed as a static site on Vercel.
 
@@ -11,8 +11,9 @@ Deployed as a static site on Vercel.
 | `index.html` | Campaign Overview: setup at a glance, campaigns, geography, lead delivery (Sept 18, 2026) |
 | `reports/home-campaign.html` | Home Campaign: shopper targeting, geography, budget (Sept 18, 2026) |
 | `reports/auto-home-bundle-campaign.html` | Auto-Home Bundle Campaign: shopper targeting, geography (Sept 18, 2026) |
+| `reports/seo-audit-2026-09.html` | SEO Audit: boreckyagency.com key metrics, page-by-page checks, Lighthouse scores, recommendations (Sept 18, 2026) |
 
-The Campaign Overview is the landing page. All three reports share a sidebar that links
+The Campaign Overview is the landing page. All four reports share a sidebar that links
 to each other. Each one is a single self-contained HTML file: charts are inline and the
 logo is an inline base64 image. The only external request is the Inter webfont from
 Google Fonts. There is no build step and there are no dependencies.
