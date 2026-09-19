@@ -8,13 +8,15 @@ Deployed as a static site on Vercel.
 
 | Path | Report |
 | --- | --- |
-| `index.html` | Campaign Overview: setup at a glance, campaigns, geography, lead delivery (Sept 18, 2026) |
+| `index.html` | Landing page: one card per report, linking to each |
+| `reports/campaign-overview.html` | Campaign Overview: setup at a glance, campaigns, geography, lead delivery (Sept 18, 2026) |
 | `reports/home-campaign.html` | Home Campaign: shopper targeting, geography, budget (Sept 18, 2026) |
 | `reports/auto-home-bundle-campaign.html` | Auto-Home Bundle Campaign: shopper targeting, geography (Sept 18, 2026) |
 | `reports/seo-audit-2026-09.html` | SEO Audit: boreckyagency.com key metrics, page-by-page checks, Lighthouse scores, recommendations (Sept 18, 2026) |
 
-The Campaign Overview is the landing page. All four reports share a sidebar that links
-to each other. Each one is a single self-contained HTML file: charts are inline and the
+`index.html` is the landing page, with a card for each report. Every report has an
+"← All Reports" button at the top of its sidebar that links back to it, and the four
+reports also link to each other in the sidebar. Each one is a single self-contained HTML file: charts are inline and the
 logo is an inline base64 image. The only external request is the Inter webfont from
 Google Fonts. There is no build step and there are no dependencies.
 
@@ -34,10 +36,15 @@ come from `vercel.json`.
 
 ## Adding another report
 
-Put the new HTML file in `reports/` and use a lowercase, hyphenated filename. Then add
-it to the sidebar nav in `index.html` and in every file in `reports/`. From the overview
-the link is `reports/<name>.html`. From another report it is `<name>.html`, and the link
-back to the overview is `../index.html`.
+Put the new HTML file in `reports/` and use a lowercase, hyphenated filename. Then:
+
+1. Add a card for it to the grid in `index.html`, plus a matching numbered link in the
+   hub's sidebar nav.
+2. Give the report the "← All Reports" button as the first element of its sidebar:
+   `<a class="back" href="../index.html">&larr; All Reports</a>`, with the `.side .back`
+   CSS copied from any existing report.
+3. Add it to the "Reports" list in the sidebar nav of every file in `reports/`. Links
+   between reports are plain filenames, such as `home-campaign.html`.
 
 ## Previewing locally
 
