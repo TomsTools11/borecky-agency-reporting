@@ -12,7 +12,7 @@ Deployed as a static site on Vercel.
 | `reports/campaign-overview.html` | Campaign Overview: setup at a glance, campaigns, geography, lead delivery (Sept 18, 2026) |
 | `reports/home-campaign.html` | Home Campaign: shopper targeting, geography, budget (Sept 18, 2026) |
 | `reports/auto-home-bundle-campaign.html` | Auto-Home Bundle Campaign: shopper targeting, geography (Sept 18, 2026) |
-| `reports/seo-audit-2026-09.html` | SEO Audit: boreckyagency.com key metrics, page-by-page checks, Lighthouse scores, recommendations (Sept 18, 2026) |
+| `reports/seo-audit-2026-09.html` | SEO Audit: boreckyagency.com key metrics, page-by-page checks, Lighthouse scores, recommendations (Sept 18, 2026). Keyword research added Sept 19: 99 recommended keywords, a 10-page sitemap with titles, H1s and meta descriptions, and the full filterable keyword list |
 
 `index.html` is the landing page, with a card for each report. Every report has an
 "← All Reports" button at the top of its sidebar that links back to it, and the four
