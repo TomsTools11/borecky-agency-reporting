@@ -8,18 +8,16 @@ Deployed as a static site on Vercel.
 
 | Path | Report |
 | --- | --- |
-| `index.html` | Landing page: one card per report in two sections, "Campaign Reporting" and "Website & SEO" |
-| `reports/campaign-overview.html` | Campaign Overview: setup at a glance, campaigns, geography, lead delivery (Sept 18, 2026) |
-| `reports/home-campaign.html` | Home Campaign: shopper targeting, geography, budget (Sept 18, 2026) |
+| `index.html` | Landing page in the GOAL report style: one card per report in two sections, "Campaign Reports" and "Website & SEO" |
 | `reports/auto-home-bundle-campaign.html` | Auto-Home Bundle Campaign: shopper targeting, geography (Sept 18, 2026) |
 | `reports/blended-performance.html` | Blended Performance: Home (AR) campaign to date, Sept 21 to Oct 27, 2026. Key metrics, county mix, conversion funnel, inbound calls, recommendations (Oct 27, 2026) |
 | `reports/seo-keyword-research-2026-09.html` | Keyword Research & On-Page SEO: on-page metrics and page-by-page checks for the 7 current pages, the 6 on-page recommendations, 99 recommended keywords in 13 clusters, a 10-page sitemap with titles, H1s and meta descriptions, the full filterable keyword list with the autocomplete seeds each phrase was seen for, and the items to confirm before copy is written (Sept 18–19, 2026) |
 | `reports/seo-audit-2026-09.html` | Technical SEO Audit: boreckyagency.com key metrics, passing checks, Lighthouse scores and load timings, the 6 technical recommendations (Sept 18, 2026) |
 
 `index.html` is the landing page, with a card for each report grouped into "Campaign
-Reporting" (the four campaign reports) and "Website & SEO" (the two SEO reports). Every
-report has an "← All Reports" button at the top of its sidebar that links back to it, and
-the six reports also link to each other in the sidebar under the same two group labels.
+Reports" (the campaign reports) and "Website & SEO" (the two SEO reports). The
+older reports have an "← All Reports" button in the sidebar that links back to it, and
+they also link to each other in the sidebar under the same two group labels.
 The SEO report was split on Sept 19: the keyword, copy and on-page material is in
 `seo-keyword-research-2026-09.html`, and `seo-audit-2026-09.html` keeps the technical
 audit, so the original audit link still works. Each one is a single self-contained HTML file: charts are inline and the
@@ -29,7 +27,7 @@ Google Fonts. There is no build step and there are no dependencies.
 ## Deploying on Vercel
 
 `vercel.json` serves the repo root as a static site (`framework: null`,
-`outputDirectory: "."`, `cleanUrls: true`), so `/reports/home-campaign` works without
+`outputDirectory: "."`, `cleanUrls: true`), so `/reports/blended-performance` works without
 the `.html` extension. Every push to `main` publishes to production, and every other
 branch or PR gets its own preview URL.
 
@@ -52,7 +50,7 @@ Put the new HTML file in `reports/` and use a lowercase, hyphenated filename. Th
    CSS copied from any existing report.
 3. Add it under the matching group label ("Campaign reporting" or "Website & SEO") in
    the sidebar nav of every file in `reports/`. Links between reports are plain
-   filenames, such as `home-campaign.html`.
+   filenames, such as `blended-performance.html`.
 
 ## Previewing locally
 
