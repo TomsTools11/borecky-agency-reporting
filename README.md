@@ -10,7 +10,7 @@ Deployed as a static site on Vercel.
 | --- | --- |
 | `index.html` | Landing page in the GOAL report style: one card per report in two sections, "Campaign Reports" and "Website & SEO" |
 | `reports/blended-performance.html` | Blended Performance: Home (AR) campaign to date, Sept 21 to Oct 27, 2026. Key metrics, county mix, conversion funnel, inbound calls, recommendations (Oct 27, 2026) |
-| `reports/age-deep-dive.html` | Age Deep Dive: Home (AR) leads by consumer age, age by source type, age by county, age limit options, recommendations (Oct 27, 2026) |
+| `reports/age-deep-dive.html` | Age Deep Dive: blended (all campaigns) leads by consumer age, age by source type, age by county, age limit options, recommendations (Oct 27, 2026) |
 | `reports/seo-keyword-research-2026-09.html` | Keyword Research & On-Page SEO: on-page metrics and page-by-page checks for the 7 current pages, the 6 on-page recommendations, 99 recommended keywords in 13 clusters, a 10-page sitemap with titles, H1s and meta descriptions, the full filterable keyword list with the autocomplete seeds each phrase was seen for, and the items to confirm before copy is written (Sept 18–19, 2026) |
 | `reports/seo-audit-2026-09.html` | Technical SEO Audit: boreckyagency.com key metrics, passing checks, Lighthouse scores and load timings, the 6 technical recommendations (Sept 18, 2026) |
 
