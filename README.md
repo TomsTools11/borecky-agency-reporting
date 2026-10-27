@@ -12,13 +12,14 @@ Deployed as a static site on Vercel.
 | `reports/campaign-overview.html` | Campaign Overview: setup at a glance, campaigns, geography, lead delivery (Sept 18, 2026) |
 | `reports/home-campaign.html` | Home Campaign: shopper targeting, geography, budget (Sept 18, 2026) |
 | `reports/auto-home-bundle-campaign.html` | Auto-Home Bundle Campaign: shopper targeting, geography (Sept 18, 2026) |
+| `reports/blended-performance.html` | Blended Performance: Home (AR) campaign to date, Sept 21 to Oct 27, 2026. Key metrics, county mix, conversion funnel, inbound calls, recommendations (Oct 27, 2026) |
 | `reports/seo-keyword-research-2026-09.html` | Keyword Research & On-Page SEO: on-page metrics and page-by-page checks for the 7 current pages, the 6 on-page recommendations, 99 recommended keywords in 13 clusters, a 10-page sitemap with titles, H1s and meta descriptions, the full filterable keyword list with the autocomplete seeds each phrase was seen for, and the items to confirm before copy is written (Sept 18–19, 2026) |
 | `reports/seo-audit-2026-09.html` | Technical SEO Audit: boreckyagency.com key metrics, passing checks, Lighthouse scores and load timings, the 6 technical recommendations (Sept 18, 2026) |
 
 `index.html` is the landing page, with a card for each report grouped into "Campaign
-Reporting" (the three campaign reports) and "Website & SEO" (the two SEO reports). Every
+Reporting" (the four campaign reports) and "Website & SEO" (the two SEO reports). Every
 report has an "← All Reports" button at the top of its sidebar that links back to it, and
-the five reports also link to each other in the sidebar under the same two group labels.
+the six reports also link to each other in the sidebar under the same two group labels.
 The SEO report was split on Sept 19: the keyword, copy and on-page material is in
 `seo-keyword-research-2026-09.html`, and `seo-audit-2026-09.html` keeps the technical
 audit, so the original audit link still works. Each one is a single self-contained HTML file: charts are inline and the
